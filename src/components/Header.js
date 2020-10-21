@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import { StaticQuery, graphql } from 'gatsby';
-import GitHubButton from 'react-github-btn';
+// import GitHubButton from 'react-github-btn';
 import Link from './link';
 import Loadable from 'react-loadable';
 
@@ -170,7 +170,7 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
                     ></ul>
                   </li>
                 ) : null}
-                {githubUrl !== '' ? (
+                {/* {githubUrl !== '' ? (
                   <li className={'githubBtn'}>
                     <GitHubButton
                       href={githubUrl}
@@ -180,7 +180,7 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
                       Star
                     </GitHubButton>
                   </li>
-                ) : null}
+                ) : null} */}
                 <li>
                   <DarkModeSwitch
                     isDarkThemeActive={isDarkThemeActive}

@@ -6,31 +6,18 @@ const config = {
     trailingSlash: false,
   },
   header: {
-    logo: 'https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/brand.svg',
-    logoLink: 'https://hasura.io/learn/',
-    title:
-      "<a href='https://hasura.io/learn/'><img class='img-responsive' src='https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/learn-logo.svg' alt='Learn logo' /></a>",
-    githubUrl: 'https://github.com/hasura/gatsby-gitbook-boilerplate',
+    logo:
+      'https://bloomberg.nursing.utoronto.ca/wp-content/themes/nursing/images/bloomberg_logo.png',
+    logoLink: '/',
+    title: '',
+    githubUrl: 'https://github.com/awconway/nur1127syllabus',
     helpUrl: '',
     tweetText: '',
-    social: `<li>
-		    <a href="https://twitter.com/hasurahq" target="_blank" rel="noopener">
-		      <div class="twitterBtn">
-		        <img src='https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/twitter-brands-block.svg' alt={'Discord'}/>
-		      </div>
-		    </a>
-		  </li>
-			<li>
-		    <a href="https://discordapp.com/invite/hasura" target="_blank" rel="noopener">
-		      <div class="discordBtn">
-		        <img src='https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/discord-brands-block.svg' alt={'Discord'}/>
-		      </div>
-		    </a>
-		  </li>`,
+    social: ``,
     links: [{ text: '', link: '' }],
     search: {
-      enabled: false,
-      indexName: '',
+      enabled: true,
+      indexName: 'dev_nur1127search',
       algoliaAppId: process.env.GATSBY_ALGOLIA_APP_ID,
       algoliaSearchKey: process.env.GATSBY_ALGOLIA_SEARCH_KEY,
       algoliaAdminKey: process.env.ALGOLIA_ADMIN_KEY,
@@ -38,24 +25,28 @@ const config = {
   },
   sidebar: {
     forcedNavOrder: [
-      '/introduction', // add trailing slash if enabled above
-      '/codeblock',
+      '/index',
+      '/schedule', // add trailing slash if enabled above
+      '/reading',
+      '/online',
+      '/assignments',
+      '/evaluation',
+      '/policies',
     ],
     collapsedNav: [
-      '/codeblock', // add trailing slash if enabled above
+      '/evaluation', // add trailing slash if enabled above
     ],
-    links: [{ text: 'Hasura', link: 'https://hasura.io' }],
-    frontline: false,
-    ignoreIndex: true,
-    title:
-      "<a href='https://hasura.io/learn/'>graphql </a><div class='greenCircle'></div><a href='https://hasura.io/learn/graphql/react/introduction/'>react</a>",
+    links: [{ text: 'Course webpage', link: 'https://nur1127.netlify.app' }],
+    frontline: true,
+    ignoreIndex: false,
+    title: "<div class='greenCircle'></div> NUR 1127 <div class='greenCircle'></div>",
   },
   siteMetadata: {
-    title: 'Gatsby Gitbook Boilerplate | Hasura',
-    description: 'Documentation built with mdx. Powering hasura.io/learn ',
+    title: 'NUR1127 Syllabus',
+    description: '',
     ogImage: null,
-    docsLocation: 'https://github.com/hasura/gatsby-gitbook-boilerplate/tree/master/content',
-    favicon: 'https://graphql-engine-cdn.hasura.io/img/hasura_icon_black.svg',
+    docsLocation: 'https://github.com/awconway/nur1127syllabus/tree/master/content',
+    favicon: 'https://raw.githubusercontent.com/awconway/nur1127/master/static/logo.png',
   },
   pwa: {
     enabled: false, // disabling this will also remove the existing service worker.
@@ -69,7 +60,7 @@ const config = {
       crossOrigin: 'use-credentials',
       icons: [
         {
-          src: 'src/pwa-512.png',
+          src: 'https://raw.githubusercontent.com/awconway/nur1127/master/static/logo.png',
           sizes: `512x512`,
           type: `image/png`,
         },
