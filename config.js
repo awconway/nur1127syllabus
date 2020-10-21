@@ -60,7 +60,7 @@ const config = {
       crossOrigin: 'use-credentials',
       icons: [
         {
-          src: 'https://raw.githubusercontent.com/awconway/nur1127/master/static/logo.png',
+          src: 'logo.png',
           sizes: `512x512`,
           type: `image/png`,
         },
