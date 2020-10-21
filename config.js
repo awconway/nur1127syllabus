@@ -1,7 +1,7 @@
 const config = {
   gatsby: {
     pathPrefix: '/',
-    siteUrl: 'https://hasura.io',
+    siteUrl: 'https://nur1127syllabus.gtsb.io',
     gaTrackingId: null,
     trailingSlash: false,
   },
@@ -49,10 +49,10 @@ const config = {
     favicon: 'https://raw.githubusercontent.com/awconway/nur1127/master/static/logo.png',
   },
   pwa: {
-    enabled: false, // disabling this will also remove the existing service worker.
+    enabled: true, // disabling this will also remove the existing service worker.
     manifest: {
-      name: 'Gatsby Gitbook Starter',
-      short_name: 'GitbookStarter',
+      name: 'NUR1127 Syllabus',
+      short_name: 'nur1127syllabus',
       start_url: '/',
       background_color: '#6b37bf',
       theme_color: '#6b37bf',
