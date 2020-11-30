@@ -1,7 +1,7 @@
 const config = {
   gatsby: {
     pathPrefix: '/',
-    siteUrl: 'https://nur1127syllabus.gtsb.io',
+    siteUrl: 'https://nur1127syllabus.netlify.app',
     gaTrackingId: null,
     trailingSlash: false,
   },
