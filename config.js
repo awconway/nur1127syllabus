@@ -54,8 +54,8 @@ const config = {
       name: 'NUR1127 Syllabus',
       short_name: 'nur1127syllabus',
       start_url: '/',
-      background_color: '#6b37bf',
-      theme_color: '#6b37bf',
+      background_color: '#002A61',
+      theme_color: '#002A61',
       display: 'standalone',
       crossOrigin: 'use-credentials',
       icons: [
