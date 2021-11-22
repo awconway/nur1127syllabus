@@ -3,6 +3,6 @@ public
 node_modules
 *DS_Store
 *.env
-
+Icon?
 .idea/
 nur1127syllabus.code-workspace
